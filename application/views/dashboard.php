@@ -2369,3 +2369,16 @@
 		</div>
 	</div>
 	<!-- END CONTENT -->
+
+<?php
+
+// echo get_js('vmap');
+// echo get_js('flot');
+// echo get_js('pulsate');
+// echo get_js('daterange');
+// echo get_js('gritter');
+// echo get_js('fullcalendar');
+// echo get_js('piechart');
+// echo get_js('sparkline');
+
+?>

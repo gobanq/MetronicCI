@@ -964,7 +964,7 @@ var App = function () {
         // handle theme colors
         var setColor = function (color) {
             var color_ = (App.isRTL() ? color + '-rtl' : color);
-            $('#style_color').attr("href", "assets/css/themes/" + color_ + ".css");
+            $('#style_color').attr("href", CI_ROOT+"public/assets/css/themes/" + color_ + ".css");
             if ($.cookie) {                
                 $.cookie('style_color', color);
             }
@@ -1104,11 +1104,11 @@ var App = function () {
             var options = $.extend(true, {}, options);
             var html = '';
             if (options.iconOnly) {
-                html = '<div class="loading-message ' + (options.boxed ? 'loading-message-boxed' : '')+'"><img style="" src="./assets/img/loading-spinner-grey.gif" align=""></div>';
+                html = '<div class="loading-message ' + (options.boxed ? 'loading-message-boxed' : '')+'"><img style="" src="'+CI_ROOT+'/public/assets/img/loading-spinner-grey.gif" align=""></div>';
             } else if (options.textOnly) {
                 html = '<div class="loading-message ' + (options.boxed ? 'loading-message-boxed' : '')+'"><span>&nbsp;&nbsp;' + (options.message ? options.message : 'LOADING...') + '</span></div>';
             } else {    
-                html = '<div class="loading-message ' + (options.boxed ? 'loading-message-boxed' : '')+'"><img style="" src="./assets/img/loading-spinner-grey.gif" align=""><span>&nbsp;&nbsp;' + (options.message ? options.message : 'LOADING...') + '</span></div>';
+                html = '<div class="loading-message ' + (options.boxed ? 'loading-message-boxed' : '')+'"><img style="" src="'+CI_ROOT+'/public/assets/img/loading-spinner-grey.gif" align=""><span>&nbsp;&nbsp;' + (options.message ? options.message : 'LOADING...') + '</span></div>';
             }
 
             if (options.target) { // element blocking
@@ -1166,7 +1166,7 @@ var App = function () {
 
         startPageLoading: function(message) {
             $('.page-loading').remove();
-            $('body').append('<div class="page-loading"><img src="assets/img/loading-spinner-grey.gif"/>&nbsp;&nbsp;<span>' + (message ? message : 'Loading...') + '</span></div>');
+            $('body').append('<div class="page-loading"><img src="'+CI_ROOT+'/public/assets/img/loading-spinner-grey.gif"/>&nbsp;&nbsp;<span>' + (message ? message : 'Loading...') + '</span></div>');
         },
 
         stopPageLoading: function() {

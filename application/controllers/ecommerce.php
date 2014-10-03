@@ -22,3 +22,5 @@ class Ecommerce extends CI_Controller {
 
 /* End of file ecommerce.php */
 /* Location: ./application/controllers/ecommerce.php */
+
+?>
