@@ -13,17 +13,22 @@ Page header
 .header {
   filter: none !important;
   background-image: none !important;
-  background-color: #470d54 !important;
+  border-bottom: 1px solid #470d54!important;
+  /*background-color: #470d54 !important;*/
 }
-.header .btn-navbar {
+/*.header .navbar-nav {
   background-color: #470d54 !important;
+}*/
+.header .btn-navbar {
+  /*background-color: #470d54 !important;*/
 }
 .header .navbar-nav .dropdown-toggle:hover,
 .header .navbar-nav .dropdown.open .dropdown-toggle {
   background-color: #69147b !important;
 }
 .header .navbar-nav li.dropdown .dropdown-toggle i {
-  color: #c84fe3 !important;
+  color: #470d54 !important;
+  /*color: #c84fe3 !important;*/
 }
 /***
 Header Search

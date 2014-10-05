@@ -1,4 +1,4 @@
-/***
+               /***
 Grey theme
 ***/
 /***
@@ -13,7 +13,11 @@ Page header
 .header {
   filter: none !important;
   background-image: none !important;
-  background-color: #4a4a4a !important;
+  border-bottom: 1px solid #4a4a4a!important;
+  /*background-color: #4a4a4a !important;*/
+}
+.header .navbar-nav {
+  /*background-color: #4a4a4a !important;*/
 }
 .header .btn-navbar {
   background-color: #4a4a4a !important;
