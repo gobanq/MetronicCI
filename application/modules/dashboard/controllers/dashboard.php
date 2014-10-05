@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+// comen baru
+
 class Dashboard extends MX_Controller {
 
 	function __construct() {
