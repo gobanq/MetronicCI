@@ -13,7 +13,6 @@
 <meta content="" name="description"/>
 <meta content="" name="author"/>
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>public/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>public/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>public/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
@@ -28,7 +27,7 @@
 <link href="<?php echo base_url(); ?>public/assets/css/print.css" rel="stylesheet" type="text/css" media="print"/>
 <link href="<?php echo base_url(); ?>public/assets/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
-<link rel="shortcut icon" href="<?php echo base_url(); ?>public/favicon.ico"/>
+<link rel="shortcut icon" href="<?php echo base_url(); ?>public/assets/logo/favicon.ico"/>
 
 <script src="<?php echo base_url(); ?>public/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -70,25 +69,22 @@
 <script src="<?php echo base_url(); ?>public/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 
+<!-- START JS Custom -->
+   <?= $_js ?>
+<!-- END JS Custom -->
+
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="<?php echo base_url(); ?>public/assets/scripts/core/app.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>public/assets/scripts/custom/index.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>public/assets/scripts/custom/tasks.js" type="text/javascript"></script>
+<!-- <script src="<?php echo base_url(); ?>public/assets/scripts/custom/index.js" type="text/javascript"></script> -->
+<!-- <script src="<?php echo base_url(); ?>public/assets/scripts/custom/tasks.js" type="text/javascript"></script> -->
 <!-- END PAGE LEVEL SCRIPTS -->
+
 <script>
-jQuery(document).ready(function() {    
+$('document').ready(function(){
    App.init(); // initlayout and core plugins
-   // Index.init();
-   // Index.initJQVMAP(); // init index page's custom scripts
-   // Index.initCalendar(); // init index page's custom scripts
-   // Index.initCharts(); // init index page's custom scripts
-   // Index.initChat();
-   // Index.initMiniCharts();
-   // Index.initDashboardDaterange();
-   // Index.initIntro();
-   // Tasks.initDashboardWidget();
 });
 </script>
+
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->

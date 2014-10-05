@@ -2370,15 +2370,16 @@
 	</div>
 	<!-- END CONTENT -->
 
-<?php
-
-// echo get_js('vmap');
-// echo get_js('flot');
-// echo get_js('pulsate');
-// echo get_js('daterange');
-// echo get_js('gritter');
-// echo get_js('fullcalendar');
-// echo get_js('piechart');
-// echo get_js('sparkline');
-
-?>
+<script type="text/javascript">
+	$('document').ready(function(){
+	   JQVMap.init();
+	   JQVMap.initJQVMAP(); // init index page's custom scripts
+	   // Index.initCalendar(); // init index page's custom scripts
+	   // Index.initCharts(); // init index page's custom scripts
+	   // Index.initChat();
+	   // Index.initMiniCharts();
+	   // Index.initDashboardDaterange();
+	   // Index.initIntro();
+	   // Tasks.initDashboardWidget();
+	});
+</script>

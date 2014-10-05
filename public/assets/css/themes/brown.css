@@ -13,7 +13,11 @@ Page header
 .header {
   filter: none !important;
   background-image: none !important;
-  background-color: #35220d !important;
+  border-bottom: 1px solid #35220d!important;
+  /*background-color: #35220d !important;*/
+}
+.header .navbar-nav {
+  /*background-color: #35220d !important;*/
 }
 .header .btn-navbar {
   background-color: #35220d !important;

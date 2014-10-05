@@ -14,7 +14,11 @@ Page header
 .header {
   filter: none !important;
   background-image: none !important;
-  background-color: #212121 !important;
+  border-bottom: 1px solid #212121!important;
+  /*background-color: #212121 !important;*/
+}
+.header .navbar-nav {
+  /*background-color: #212121 !important;*/
 }
 .header .btn-navbar {
   background-color: #212121 !important;
